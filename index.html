@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nome | Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--
+    Instruções rápidas:
+    - Troque "Seu Nome" e os textos de exemplo abaixo pelas suas informações.
+    - Coloque sua foto como "images/profile.jpg" ou altere o src.
+    - Adicione/edite projetos na seção "projects".
+  -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="profile-img" src="images/pe.jpg" alt="Foto de perfil (substitua)" />
+        <div class="name-title">
+          <h1 id="portfolio-name">Hélio Ricardo Scorsio Santos</h1>
+          <p id="portfolio-role">Desenvolvedor | Designer | Profissão</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="container section about">
+      <h2>Sobre</h2>
+      <p>
+        <!-- Substitua pelo seu resumo profissional -->
+        Olá! Sou <strong>Hélio Ricardo Scorsio Santos</strong>, trabalho com desenvolvimento web e mobile. Tenho experiência em Java, React/React Native, banco de dados e construção de aplicações completas com atenção à usabilidade e desempenho.
+      </p>
+      <ul class="meta">
+        <li><strong>Local:</strong> Fernandópolis, Brasil</li>
+        <li><strong>Email:</strong> <a href="mailto:seuemail@exemplo.com">ccctyg126@gmail.com</a></li>
+        <li><strong>Telefone:</strong> (17) 99649-5267</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="container section skills">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, React, Tailwind</p>
+        </div>
+        <div class="skill">
+          <h3>Backend</h3>
+          <p>Java, Spring Boot, Node.js, APIs REST</p>
+        </div>
+        <div class="skill">
+          <h3>Mobile</h3>
+          <p>React Native, Expo</p>
+        </div>
+        <div class="skill">
+          <h3>Bancos de dados</h3>
+          <p>MySQL, PostgreSQL</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section projects">
+      <h2>Projetos</h2>
+
+      <!-- Repita/duplique este bloco para adicionar mais projetos -->
+      <article class="project">
+        <div class="project-info">
+          <h3 class="project-title">Projeto 1 — Nome do Projeto</h3>
+          <p class="project-desc">Breve descrição do projeto, tecnologias usadas e o que você contribuiu.</p>
+          <p class="project-tags">Java • Spring Boot • MySQL</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+        <div class="project-thumb">
+          <img src="images/sa.jpg" alt="Miniatura do Projeto 1" />
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-info">
+          <h3 class="project-title">Projeto 2 — Nome do Projeto</h3>
+          <p class="project-desc">Breve descrição do projeto, tecnologias usadas e o que você contribuiu.</p>
+          <p class="project-tags">React • Tailwind • API</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+        <div class="project-thumb">
+          <img src="images/spy.jpg" alt="Miniatura do Projeto 2" />
+        </div>
+      </article>
+      <!-- /blocos de projeto -->
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2>Contato</h2>
+      <p>Quer trabalhar comigo ou só bater um papo? Me mande uma mensagem.</p>
+
+      <div class="contact-cards">
+        <div class="card">
+          <h4>Email</h4>
+          <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a>
+        </div>
+        <div class="card">
+          <h4>LinkedIn</h4>
+          <a href="#" target="_blank" rel="noopener">linkedin.com/in/seu-perfil</a>
+        </div>
+        <div class="card">
+          <h4>GitHub</h4>
+          <a href="#" target="_blank" rel="noopener">github.com/seu-usuario</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Seu Nome — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Atualiza o ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
